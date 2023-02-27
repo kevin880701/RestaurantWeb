@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>多列等高</title>
+  <style>
+    /* 公共样式 */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      background: #0b88ec;
+    }
+    ul li p {
+      padding: 10px;
+      margin: 0;
+      color: #fff;
+    }
+
+    /* padding margin 实现样式 */
+    .test-1 ul {
+      overflow: hidden;
+    }
+    .test-1 li {
+      float: left;
+      width: 33.33%;
+      padding-bottom: 9999px;
+      margin: 0 0 -9999px 0;
+    }
+
+    /* table 实现样式 */
+    .test-2 ul {
+      display: table;
+    }
+    .test-2 li {
+      display: table-cell;
+      width: 33.33%;
+    }
+
+    /* flex 实现样式 */
+    .test-3 ul {
+      display: box;
+      display: -webkit-flex;
+      display: flex;
+    }
+    .test-3 li {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      width: 0;
+    }
+  </style>
+</head>
+<body>
+<!-- padding margin 实现 -->
+<h3>padding margin 实现:</h3>
+<div class="test-1">
+  <ul>
+    <li>
+      <p>
+        步子不非得迈得大，只要朝着正确的方向前进就行。步子不非得迈得大，只要朝着正确的方向前进就行。
+      </p>
+    </li>
+
+    <li><p>步子不非得迈得大，只要朝着正确的方向前进就行。</p></li>
+
+    <li>
+      <p>
+        步子不非得迈得大，只要朝着正确的方向前进就行。步子不非得迈得大，只要朝着正确的方向前进就行。步子不非得迈得大，只要朝着正确的方向前进就行。
+      </p>
+    </li>
+  </ul>
+</div>
+
+<!-- table 实现 -->
+<h3>table 实现:</h3>
+<div class="test-2">
+  <ul>
+    <li>
+      <p>
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+      </p>
+    </li>
+    <li><p>步子不非得迈得大，只要朝着正确的方向前进就行。</p></li>
+    <li>
+      <p>
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+      </p>
+    </li>
+  </ul>
+</div>
+
+<!-- flex 实现 -->
+<h3>flex 实现:</h3>
+<div class="test-3">
+  <ul>
+    <li>
+      <p>
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+      </p>
+    </li>
+    <li><p>步子不非得迈得大，只要朝着正确的方向前进就行。</p></li>
+    <li>
+      <p>
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+        步子不非得迈得大，只要朝着正确的方向前进就行。
+      </p>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

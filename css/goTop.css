@@ -1,0 +1,31 @@
+.gotop {
+  display: flex;
+  position: fixed;
+  border-radius: 50%;
+  background: #DADADA;
+  /*background: url(../img/top.png) #DADADA no-repeat;*/
+  /*background-size: contain;*/
+  width: 5vh;
+  height: 5vh;
+  right: 5vh;
+  bottom: 3vh;
+  font-size: 25px;
+  color: #6D6D6D;
+  cursor: pointer;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.gotop img{
+  position: relative;
+  /*background: url(../img/top.png) #DADADA no-repeat;*/
+  /*background-size: contain;*/
+  width: 3vh;
+  height: 3vh;
+  /*right: 5vh;*/
+  /*bottom: 3vh;*/
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1001;
+}

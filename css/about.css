@@ -1,0 +1,97 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  /* vertical-align: baseline; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 94%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: gray;
+}
+
+.main{
+  background-image: url(../img/about-background.jpg);
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15vh;
+}
+
+.text-wrapper{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 35px 15%;
+
+}
+
+.text-wrapper h1{
+  font-weight: 900;
+  color: #433d3c;
+  letter-spacing: 2px;
+  font-size: 62px;
+  text-align: center;
+}
+
+.two-col{
+  column-count: 2;
+  column-gap: 85px;
+  margin-top: 10px;
+  font-size: 100%;
+}
+
+.img-row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.img-row img{
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 0.5px;
+}
+
+.uber-img{
+  background-color: #F6F6F6;
+  padding-left: 100px;
+}
+
+.gotop {
+  display: flex;
+  position: fixed;
+  border-radius: 50%;
+  background: #DADADA;
+  width: 5vh;
+  height: 5vh;
+  right: 5vh;
+  bottom: 3vh;
+  font-size: 25px;
+  color: #6D6D6D;
+  cursor: pointer;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.gotop img{
+  position: relative;
+  width: 3vh;
+  height: 3vh;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1001;
+}
